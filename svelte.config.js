@@ -7,6 +7,7 @@ import rehypeExternalLinks from 'rehype-external-links';
 import addClasses from 'rehype-add-classes';
 import remarkMath from 'remark-math';
 import remarkGithub from 'remark-github';
+import remarkFootnotes from 'remark-footnotes';
 import rehypeKatexSvelte from 'rehype-katex-svelte';
 
 import dotenv from 'dotenv';
@@ -31,7 +32,8 @@ const config = {
 			},
 			remarkPlugins: [
 				remarkMath,
-				[remarkGithub, { repository: `${process.env.GITHUB_USER}/${process.env.REPOSITORY}` }]
+				[remarkGithub, { repository: `${process.env.GITHUB_USER}/${process.env.REPOSITORY}` }],
+				remarkFootnotes
 			],
 			rehypePlugins: [
 				rehypeKatexSvelte,
