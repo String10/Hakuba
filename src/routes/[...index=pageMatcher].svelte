@@ -29,7 +29,7 @@
 		const buildTitle = (selected: string | undefined, currentPage: number) => {
 			let title = `${BLOG_NAME}`;
 
-			if (selected) title = `${title} - Lbael ${selected}`;
+			if (selected) title = `${title} - Label ${selected}`;
 			if (currentPage > 1) title = `${title} - Page ${currentPage}`;
 			return title;
 		};
