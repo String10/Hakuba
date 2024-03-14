@@ -1,6 +1,9 @@
 {
 	"name": "svelte-blog",
 	"version": "0.0.2",
+	"engines": {
+		"node": ">=16 <18.19.0"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"generateData": "ts-node .scripts/pre/index.ts",
