@@ -24,7 +24,7 @@
 			fetchLabels()
 		]);
 
-		const basePath = label ? `/labels/${label}/page/` : '/page/';
+		const basePath = label ? `/label/${label}/page/` : '/page/';
 
 		const buildTitle = (selected: string | undefined, currentPage: number) => {
 			let title = `${BLOG_NAME}`;
